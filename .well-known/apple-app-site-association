@@ -6,7 +6,15 @@
         "components": [
           {
             "/": "/auth/confirm",
-            "comment": "All Halal Meetups auth-confirmation links (signup confirm + password recovery). Path-only match so any ?type=… is claimed; the iOS app verifies the token_hash and branches on type."
+            "comment": "Auth-confirmation links (signup confirm + password recovery). The iOS app verifies the token_hash and branches on type."
+          },
+          {
+            "/": "/events/*",
+            "comment": "Event pages — open natively in the app (the app loads the event by slug); falls back to the website if the app isn't installed."
+          },
+          {
+            "/": "/groups/*",
+            "comment": "Group pages — open natively in the app (loads by slug, maps known sub-tabs); falls back to the website if the app isn't installed."
           }
         ]
       }
