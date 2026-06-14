@@ -6,13 +6,7 @@
         "components": [
           {
             "/": "/auth/confirm",
-            "?": { "type": "signup" },
-            "comment": "Sign-up email confirmation: hand off to the app to verify the OTP and sign the member in."
-          },
-          {
-            "/": "/auth/confirm",
-            "?": { "type": "recovery" },
-            "comment": "Password-reset email: hand off to the app to verify the recovery OTP and let the member set a new password in-app."
+            "comment": "All Halal Meetups auth-confirmation links (signup confirm + password recovery). Path-only match so any ?type=… is claimed; the iOS app verifies the token_hash and branches on type."
           }
         ]
       }
