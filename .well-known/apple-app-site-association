@@ -15,6 +15,14 @@
           {
             "/": "/groups/*",
             "comment": "Group pages — open natively in the app (loads by slug, maps known sub-tabs); falls back to the website if the app isn't installed."
+          },
+          {
+            "/": "/invite/*",
+            "comment": "Group-invitation links (/invite/<token>) — open the native accept/decline screen; falls back to the website if the app isn't installed."
+          },
+          {
+            "/": "/member/messages/*",
+            "comment": "Direct-message threads (/member/messages/<id>) — open the native conversation; other /member/* pages stay on the website."
           }
         ]
       }
