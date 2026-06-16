@@ -30,7 +30,7 @@
           },
           {
             "/": "/pricing",
-            "comment": "Pricing/paywall — opens the native subscription screen (subscribe/manage happens on the web)."
+            "comment": "Pricing/paywall — claimed so the app intercepts and redirects to the PUBLIC web pricing page; subscribing stays on the web (web Stripe checkout, no App Store cut). Claiming it (vs leaving it to Safari) avoids the dev links->dev redirect landing on the auth-walled dev site."
           },
           {
             "/": "/sign-up",
