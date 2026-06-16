@@ -23,6 +23,22 @@
           {
             "/": "/member/messages/*",
             "comment": "Direct-message threads (/member/messages/<id>) — open the native conversation; other /member/* pages stay on the website."
+          },
+          {
+            "/": "/member/membership",
+            "comment": "Subscription page — opens the native 'Your subscription' screen (status, perks, web subscribe/manage link)."
+          },
+          {
+            "/": "/pricing",
+            "comment": "Pricing/paywall — opens the native subscription screen (subscribe/manage happens on the web)."
+          },
+          {
+            "/": "/sign-up",
+            "comment": "Create-account links (invite/discount/walk-in emails) — open the native sign-up screen with ?email= pre-filled."
+          },
+          {
+            "/": "/home",
+            "comment": "Home link (community-welcome email) — switches the app to the Home tab. NOTE: /billing/pay/* is intentionally NOT claimed — no native pay-by-link flow yet, so it stays on the web."
           }
         ]
       }
