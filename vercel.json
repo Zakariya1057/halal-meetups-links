@@ -1,4 +1,12 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/((?!\\.well-known|auth/confirm).+)",
+      "destination": "https://dev.halalmeetups.com/$1",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/.well-known/apple-app-site-association",
